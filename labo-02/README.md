@@ -43,7 +43,9 @@ Bij vraag 8. Ik dacht door volgorde van bewerking dat we rood gingen krijgen als
 ## 6. Je site
 
 - Welke drie waarden staan in je tokenblok, en waarom die?
+  Kleuren, lineheight en font. Om het makkelijker te maken bij een verandering, zeker bij kleuren is dit nuttig.
 - Wat verandert er in je site als je één token wijzigt?
+  Op dit moment alleen de tekstkleuren en font.
 
 ## Thuis: R2.3 (met AI)
 

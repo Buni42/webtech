@@ -1,0 +1,23 @@
+:root {
+  --color-ink: #2b2b2b;
+  --color-muted: #6b6b6b;
+  --color-bg: #fbf7f0;
+  --font-body: Verdana;
+  --line-height: 1.6;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  line-height: var(--line-height);
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+a:focus,
+a:hover {
+  color: var(--color-muted);
+}

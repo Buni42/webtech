@@ -1,6 +1,6 @@
 # Labo 2 - reflecties
 
-Naam: (jouw naam)
+Naam: Bunyamin Anil
 
 ## 2. Selectors lezen
 
@@ -18,23 +18,27 @@ Vul de eerste twee kolommen in vóór je de pagina opent. Trede: herkomst, speci
 
 | vraag | mijn voorspelling (kleur) | beslissende trede | uitkomst in de browser | juist? |
 | ----- | ------------------------- | ----------------- | ---------------------- | ------ |
-| 1     |                           |                   |                        |        |
-| 2     |                           |                   |                        |        |
-| 3     |                           |                   |                        |        |
-| 4     |                           |                   |                        |        |
-| 5     |                           |                   |                        |        |
-| 6     |                           |                   |                        |        |
-| 7     |                           |                   |                        |        |
-| 8     |                           |                   |                        |        |
-| 9     |                           |                   |                        |        |
-| 10    |                           |                   |                        |        |
+| 1     | groen                     | herkomst          | groen                  | j      |
+| 2     | blauw                     | volgorde          | blauw                  | j      |
+| 3     | rood                      | specificiteit     | rood                   | j      |
+| 4     | rood                      | volgorde          | rood                   | j      |
+| 5     | blauw                     | specificiteit     | blauw                  | j      |
+| 6     | blauw                     | volgorde          | blauw                  | j      |
+| 7     | rood                      | herkomst          | rood                   | j      |
+| 8     | rood                      | volgorde          | blauw                  | n      |
+| 9     | rood                      | ?                 | rood                   | j      |
+| 10    | groen                     | error             | groen                  | j      |
 
 Bij welke vraag zat je fout, en wat was de reden? (Alles juist? Welke vraag duurde het langst, en waarom?)
+Bij vraag 8. Ik dacht door volgorde van bewerking dat we rood gingen krijgen als kleur. Vermits rood de kleur is in style.css.
 
 ## 4. De nabouw
 
 - Welke selector koos je voor de links in de navigatie, en waarom geen class?
+  nav a, omdat er geen klass is in de nav links in de html.
 - Welke regel kostte je het meeste tijd, en wat was uiteindelijk de oorzaak?
+  footer{text-align: center;}
+  Ik dacht dat ik align-items moest gebruiken en dat het helemaal rechts moest alignen. (had de foto half open)
 
 ## 6. Je site
 

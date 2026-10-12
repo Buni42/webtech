@@ -1,0 +1,87 @@
+:root {
+  --color-papier: #fbf7f0;
+  --color-ink: #2b2b2b;
+  --color-muted: #6b6b6b;
+  --color-accent: #b5451b;
+  --color-zebra: #f1e9dc;
+  --font-body: Verdana;
+  --font-heading: Georgia;
+}
+
+body {
+  background-color: var(--color-papier);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+header {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+}
+
+footer {
+  font-size: 0.75rem;
+  text-align: center;
+  color: var(--color-muted);
+}
+
+h1 {
+  color: var(--color-accent);
+  font-weight: lighter;
+}
+
+h2,
+h3 {
+  font-weight: lighter;
+}
+
+a {
+  color: var(--color-accent);
+}
+main a:hover,
+main a:focus {
+  color: var(--color-papier);
+  background-color: var(--color-accent);
+}
+
+nav a {
+  font-weight: 600;
+  text-decoration: none;
+}
+nav a:hover,
+nav a:focus {
+  color: var(--color-ink);
+}
+
+footer a {
+  color: var(--color-muted);
+}
+footer a:hover,
+footer a:focus {
+  color: var(--color-accent);
+}
+
+article h3 {
+  color: var(--color-muted);
+}
+
+p strong {
+  color: var(--color-accent);
+}
+
+.slogan {
+  font-size: 1rem;
+  text-decoration: none;
+  color: var(--color-muted);
+  font-style: italic;
+}
+
+.intro {
+  font-size: 1.25rem;
+}
+
+.kaart li:nth-child(odd) {
+  background-color: var(--color-zebra);
+}

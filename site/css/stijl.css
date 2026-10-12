@@ -16,6 +16,7 @@ body {
 
 a {
   text-decoration: none;
+  color: var(--color-ink);
 }
 a:focus,
 a:hover {

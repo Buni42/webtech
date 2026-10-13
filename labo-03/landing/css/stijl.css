@@ -2,7 +2,79 @@
 
 /* === tokens === */
 :root {
-
+  --hovercolor: #333333;
+  --bannercolor: #c8b8ff;
+  --linkcolor: #5551ff;
+  --herocolor: #779cee;
+  --textcolor: black;
 }
 
 /* === your rules === */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.banner {
+  width: 100%;
+  background-color: var(--bannercolor);
+  text-align: center;
+  padding: 1rem;
+}
+p a {
+  color: var(--linkcolor);
+}
+p a:focus,
+p a:hover {
+  color: var(--hovercolor);
+}
+ul {
+  display: flex;
+  justify-content: end;
+  list-style: none;
+  padding: 1rem;
+}
+
+li a {
+  padding: 1rem;
+  color: var(--textcolor);
+  text-decoration: none;
+}
+li a:focus,
+li a:hover {
+  color: var(--hovercolor);
+}
+main {
+  display: flex;
+  background-color: var(--herocolor);
+  min-height: 75vh;
+  padding: 3rem;
+}
+.afbeelding {
+  width: 25vw;
+  height: 35vh;
+  min-width: 15vw;
+  min-height: 25vh;
+  margin-left: 40vh;
+  margin-right: 20vh;
+}
+article {
+  width: 25vw;
+}
+.bovenkop {
+  padding-bottom: 1rem;
+  font-weight: 500;
+}
+h1 {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+.knop {
+  display: inline-block;
+  min-width: 10vw;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 2rem;
+  padding: 1rem;
+  border-radius: 0.75rem;
+}

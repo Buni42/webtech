@@ -51,8 +51,10 @@ Bij vraag 8. Ik dacht door volgorde van bewerking dat we rood gingen krijgen als
 
 Prompt en onbewerkte output staan in `review/`. Minstens vijf bevindingen, elk met een verwijzing naar de sectie of het foutnummer:
 
-1.
-2.
-3.
-4.
-5.
+1. Main ol li, main moet er niet staan: F2.7
+2. 40 rem komt meerdere keren voor: F2.10
+3. font family toegevoegd aan elementen, kon het doen aan de token zelf: inline styles en verweesde waarden
+4. /
+5. /
+
+Voor de rest ziet het echt nog goed uit.

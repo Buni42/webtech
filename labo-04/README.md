@@ -1,6 +1,6 @@
 # Labo 4 - reflecties
 
-Naam: (jouw naam)
+Naam: Bunyamin Anil
 
 ## 1. Drie kolommen
 
@@ -31,6 +31,6 @@ Naam: (jouw naam)
 
 Welke route koos je? Bij de AI-route: prompt en onbewerkte output staan in `site/review/`, en dit corrigeerde ik (met verwijzing naar de sectie of het foutnummer):
 
-1. 
-2. 
-3. 
+1.
+2.
+3.

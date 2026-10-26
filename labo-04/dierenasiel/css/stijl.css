@@ -2,7 +2,106 @@
 
 /* === tokens === */
 :root {
-
+  --nav-color: #1f3a2e;
+  --nav-text-color: #f3efe6;
+  --main-color: #f7f4ec;
+  --main-text-color: #2b2b2b;
+  --main-gedempt-color: #6b6b6b;
+  --accent-color: #e6b53c;
+  --text-font: Verdana;
+  --header-font: Georgia;
 }
 
 /* === your rules === */
+body {
+  font-family: var(--text-font);
+  line-height: 1.6;
+  background-color: var(--main-color);
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+header {
+  width: 100%;
+  background-color: var(--nav-color);
+  font-family: var(--header-font);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header a {
+  text-decoration: none;
+  color: var(--nav-text-color);
+}
+.logo {
+  color: var(--accent-color);
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 1rem 2rem;
+}
+.actief {
+  color: var(--accent-color);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 0.5rem;
+  padding-right: 2rem;
+}
+nav ul li {
+  padding: 0.75rem 1.25rem;
+}
+
+main {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 2rem;
+  color: var(--main-text-color);
+}
+main p {
+  color: var(--main-gedempt-color);
+}
+.kaarten {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5rem;
+  padding-inline-start: 0;
+}
+.uitgelicht {
+  padding: 1.5rem;
+  grid-column: 1/3;
+  background-color: white;
+  border-radius: 0.5rem;
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+}
+.kaart {
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.beschrijving {
+  flex: 1;
+}
+.knop {
+  background-color: var(--nav-color);
+  color: var(--nav-text-color);
+  text-decoration: none;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  border-radius: 0.25rem;
+}
+
+footer {
+  display: block;
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--nav-color);
+  color: var(--nav-text-color);
+}

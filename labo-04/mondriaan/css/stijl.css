@@ -2,7 +2,42 @@
 
 /* === tokens === */
 :root {
-
 }
 
 /* === your rules === */
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+.schilderij {
+  width: 70vh;
+  height: 70vh;
+  background-color: blue;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 2vh;
+  padding: 2vh;
+}
+.lila {
+  grid-column: 1/4;
+  background-color: aqua;
+}
+.bruin {
+  background-color: brown;
+}
+.geel {
+  background-color: yellow;
+}
+.marine {
+  grid-column: 4/5;
+  background-color: darkblue;
+}
+.olijf {
+  grid-column: 1/4;
+  background-color: olive;
+}
+.rood {
+  background-color: red;
+}

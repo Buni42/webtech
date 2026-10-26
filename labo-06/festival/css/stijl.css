@@ -2,9 +2,111 @@
 
 /* === tokens === */
 :root {
-
+  --papier: #fff8ee;
+  --inkt: #1a1a1a;
+  --gedempt: #6b6b6b;
+  --accent: #d6341c;
 }
 
 /* === base: narrow screens first === */
+body {
+  background-color: var(--papier);
+  color: var(--inkt);
+  font-family: Verdana;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem 1rem;
+}
+footer {
+  color: var(--gedempt);
+  font-size: 0.875rem;
+  text-align: center;
+  padding: 1rem;
+}
+h1 {
+  font-family: Georgia;
+  min-width: clamp(2rem, 5vw + 1rem, 4rem);
+  line-height: 1.1;
+  padding-bottom: 1rem;
+}
+h2 {
+  font-family: Georgia;
+}
+ul {
+  margin-top: 1rem;
+  list-style: none;
+  padding: 0;
+}
+li {
+  border: 2px solid var(--accent);
+  border-radius: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 0.5rem 0;
+}
+a {
+  text-decoration: none;
+  color: var(--accent);
+  display: block;
+  padding: 0.75rem 1rem;
+}
+
+.actief {
+  border-radius: 2rem;
+  background-color: var(--accent);
+  color: white;
+}
+.logo {
+  color: var(--accent);
+  font-size: 2rem;
+}
+.held {
+  background-color: var(--accent);
+  color: white;
+  padding: clamp(2rem, 8vw, 6rem) clamp(1rem, 5vw, 4rem);
+}
+#programma {
+  max-width: 44rem;
+  padding: 1rem clamp(1.5rem, 5vw, 3rem);
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.programma li {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #e3d9c8;
+  text-align: left;
+}
+time {
+  min-width: 4rem;
+  color: var(--accent);
+}
+li span {
+  color: var(--gedempt);
+  text-align: right;
+}
 
 /* === media queries: below the base rules === */
+@media (min-width: 800px) {
+  header nav ul {
+    display: flex;
+    align-items: center;
+  }
+  header nav ul li {
+    margin: 0 0.5rem;
+  }
+}
+@media (min-width: 1200px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

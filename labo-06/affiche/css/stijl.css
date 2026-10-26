@@ -1,10 +1,109 @@
 /* stijl.css - labo 6, affiche (reset.css is linked before this file) */
-
-/* === tokens === */
+/* === base: narrow screens first === */
+/*nog te hermaken voor de test, problemen gehad met position. Heb gebruik gemaakt van copilot*/
 :root {
-
+  --sticker-size: clamp(4rem, 14vw, 7rem);
 }
 
-/* === base: narrow screens first === */
-
+body {
+  background-color: #1d1d1b;
+  padding: 2rem 0;
+}
+.affiche {
+  width: min(28rem, calc(100% - 2rem));
+  aspect-ratio: 3 / 4;
+  position: relative;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #2554ab;
+  color: #fff8ee;
+  padding: clamp(1.5rem, 6vw, 3rem);
+}
+h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: clamp(2rem, 8vw, 3.5rem);
+  line-height: 1.05;
+}
+p {
+  font-size: 0.875rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.sticker {
+  width: var(--sticker-size);
+  height: var(--sticker-size);
+  font-size: 0.75rem;
+  font-weight: bold;
+  display: grid;
+  place-items: center;
+  position: absolute;
+}
+.prijs {
+  border-radius: 50%;
+  background-color: #ffc83d;
+  font-size: 1.25rem;
+  color: #1d1d1b;
+  top: 2.5rem;
+  left: 2.5rem;
+  z-index: 2;
+}
+.datum {
+  background-color: #fff8ee;
+  color: #1d1d1b;
+  top: 1rem;
+  left: 1rem;
+  z-index: 1;
+}
+.uitverkocht {
+  background-color: #d6341c;
+  border-radius: 50%;
+  top: 5.5rem;
+  left: 5.5rem;
+  z-index: 4;
+}
+.logo {
+  background-color: #1d1d1b;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.25rem;
+  top: 4rem;
+  left: 4rem;
+  z-index: 3;
+}
 /* === media queries: below the base rules === */
+
+@media (min-width: 800px) {
+  .logo {
+    top: auto;
+    right: 6rem;
+    bottom: 6rem;
+    left: auto;
+  }
+  .uitverkocht {
+    top: auto;
+    right: 3rem;
+    bottom: 3rem;
+    left: auto;
+  }
+}
+
+@media (min-width: 1000px) {
+  .prijs {
+    top: 2rem;
+    right: 2rem;
+    left: auto;
+  }
+  .logo {
+    top: auto;
+    right: auto;
+    bottom: 2rem;
+    left: 2rem;
+  }
+  .uitverkocht {
+    top: auto;
+    right: 2rem;
+    bottom: 2rem;
+    left: auto;
+  }
+}

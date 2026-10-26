@@ -1,8 +1,8 @@
 # Labo 6 - reflecties
 
-Naam: (jouw naam)
+Naam: Bunyamin Anil
 
-Getest op dit echte toestel (merk, browser): 
+Getest op dit echte toestel (merk, browser):
 
 ## 1. Kleurvlakken
 
@@ -34,6 +34,6 @@ Getest op dit echte toestel (merk, browser):
 
 Welke route koos je? Bij de AI-route: prompt en onbewerkte output staan in `site/review/`, en dit corrigeerde ik (met verwijzing naar de sectie of het foutnummer):
 
-1. 
-2. 
-3. 
+1.
+2.
+3.

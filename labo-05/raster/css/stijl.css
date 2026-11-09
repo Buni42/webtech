@@ -1,8 +1,54 @@
 /* stijl.css - labo 5, raster (reset.css is linked before this file) */
-
-/* === tokens === */
-:root {
-
-}
-
 /* === your rules === */
+body {
+  padding: 1rem;
+}
+main {
+  display: grid;
+  grid-template-areas:
+    "a . . b"
+    "c d e f"
+    "g . . h";
+  gap: 1rem;
+}
+.vlak {
+  display: flex;
+  justify-content: end;
+  align-items: start;
+  color: white;
+  font-size: 1.5rem;
+  padding: 0.5rem 0.75rem;
+  height: 30vh;
+}
+.a {
+  background-color: #e9493f;
+  grid-area: a;
+}
+.b {
+  background-color: #edd24a;
+  grid-area: b;
+}
+.c {
+  background-color: #072f55;
+  grid-area: c;
+}
+.d {
+  background-color: #52a51a;
+  grid-area: d;
+}
+.e {
+  background-color: #efaad9;
+  grid-area: e;
+}
+.f {
+  background-color: #a5f129;
+  grid-area: f;
+}
+.g {
+  background-color: #ebc47a;
+  grid-area: g;
+}
+.h {
+  background-color: #e8882c;
+  grid-area: h;
+}
